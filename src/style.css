@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: radial-gradient(
+    96.74% 276.79% at 3.59% 5.28%,
+    #f0f4ff 0%,
+    #a5b6ee 100%
+  );
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  width: 400px;
+}
+
+.logo {
+  width: 244px;
+}
+
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 44px 40px;
+  width: 100%;
+  border-radius: 16px;
+  background-image: linear-gradient(314.28deg, #304577 0%, #4c65a0 83%);
+  box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+}
+
+.timer-title {
+  margin-bottom: 23px;
+  font-size: 24px;
+  color: #fff;
+}
+
+hr {
+  margin-bottom: 33px;
+  width: 100%;
+  border: 1px solid #3d538a;
+  box-shadow: 0px 1px 0px rgba(91, 117, 180, 1);
+}
+
+.timer-counter {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.count-type {
+  font-size: 12px;
+  font-weight: 700;
+  color: #a5b6ee;
+}
+
+.timer-count-btn {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  border: 1px solid #354971;
+  border-radius: 4px;
+  background-image: linear-gradient(314.28deg, #304577 0%, #4c65a0 83%);
+  cursor: pointer;
+}
+
+.timer-count-btn::before,
+.timer-count-btn::after {
+  position: absolute;
+  top: 50%;
+  content: "";
+  display: block;
+  width: 16px;
+  height: 1px;
+  background-color: #354971;
+}
+
+.timer-count-btn::before {
+  left: 0;
+}
+
+.timer-count-btn::after {
+  right: 0;
+}
+
+.status-btn-box {
+  display: flex;
+  gap: 12px;
+}
+
+.status-btn {
+  padding: 16px 0 15px 0;
+  width: 112px;
+  color: #617199;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  background-color: #324577;
+  cursor: pointer;
+}
+
+.status-btn img {
+  margin-right: 6px;
+  vertical-align: top;
+}
+
+.copyright {
+  font-size: 14px;
+  font-weight: 400;
+  color: #8596bf;
+}

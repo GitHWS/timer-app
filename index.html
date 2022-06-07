@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <h1>
+        <img src="images/weniv-logo.svg" alt="위니브" class="logo" />
+      </h1>
+
+      <article class="timer-container">
+        <h2 class="timer-title">TIMER</h2>
+
+        <hr />
+
+        <div class="timer-counter">
+          <div class="timer-counter-box">
+            <span class="count-type">HRS</span>
+            <button class="timer-count-btn hour">00</button>
+          </div>
+
+          <img src="images/dot.svg" alt="" />
+
+          <div class="timer-count-box">
+            <span class="count-type">MIN</span>
+            <button class="timer-count-btn minute">00</button>
+          </div>
+
+          <img src="images/dot.svg" alt="" />
+
+          <div class="timer-count-box">
+            <span class="count-type">SEC</span>
+            <button class="timer-count-btn second">00</button>
+          </div>
+        </div>
+        <div class="status-btn-box">
+          <button type="button" class="status-btn start">
+            <img src="images/icon-start-disabled.svg" alt="" /><span
+              >START</span
+            >
+          </button>
+          <button type="button" class="status-btn reset">
+            <img src="images/icon-reset-disabled.svg" alt="" /><span
+              >RESET</span
+            >
+          </button>
+        </div>
+      </article>
+
+      <p class="copyright">&copy; WENIV CORP.</p>
+    </section>
+    <script src="src/script.js"></script>
+  </body>
+</html>
